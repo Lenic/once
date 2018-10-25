@@ -1,0 +1,48 @@
+{
+  "name": "@lenic/once",
+  "version": "1.0.0",
+  "description": "Merge multiple operations to one operation, and store the result.",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "babel src -d lib --source-maps",
+    "start": "webpack-dev-server --config example/config/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lenic/once.git"
+  },
+  "keywords": [
+    "once",
+    "ajax",
+    "cache",
+    "batch",
+    "bulk",
+    "merge"
+  ],
+  "author": {
+    "name": "Lenic Rayleigh",
+    "email": "lenic@live.cn"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lenic/once/issues"
+  },
+  "homepage": "https://github.com/Lenic/once#readme",
+  "dependencies": {
+    "@lenic/deferred": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
