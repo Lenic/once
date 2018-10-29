@@ -27,7 +27,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@lenic/once': getPath('src'),
+      '@lenic/once': getPath('lib'),
     },
   },
   plugins: [
