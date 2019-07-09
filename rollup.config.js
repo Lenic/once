@@ -5,20 +5,20 @@ import { dependencies } from './package.json';
 
 export default {
   input: 'src/index.js',
-  external: [...Object.keys(dependencies), 'events'],
+  external: Object.keys(dependencies),
   output: {
     file: 'lib/index.js',
     format: 'cjs',
     sourcemap: true,
-    exports: 'named',
+    exports: 'named'
   },
   plugins: [
     resolve({
-      extensions: ['.js', '.jsx'],
+      extensions: ['.js', '.jsx']
     }),
     commonjs(),
     babel({
       exclude: 'node_modules/**'
-    }),
+    })
   ]
 };

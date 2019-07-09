@@ -1,5 +1,5 @@
-import { EventEmitter } from 'events';
 import Deferred from '@lenic/deferred';
+import EventEmitter from 'eventemitter3';
 
 export const bus = new EventEmitter();
 
