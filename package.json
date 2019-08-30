@@ -1,6 +1,6 @@
 {
   "name": "@lenic/once",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Merge multiple operations to one operation, and store the result.",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -36,7 +36,7 @@
     "typescript": "^3.6.2"
   },
   "peerDependencies": {
-    "@lenic/deferred": "^1.0.3",
+    "@lenic/deferred": "^1.0.4",
     "eventemitter3": "^4.0.0"
   }
 }

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@lenic/deferred@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.npm.taobao.org/@lenic/deferred/download/@lenic/deferred-1.0.3.tgz#041638f5cc8ef171de893330577753e8b850af1c"
-  integrity sha1-BBY49cyO8XHeiTMwV3dT6LhQrxw=
+"@lenic/deferred@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/@lenic/deferred/download/@lenic/deferred-1.0.4.tgz#71892d89992adf7d8af1d07fa61703bc88155dbe"
+  integrity sha1-cYktiZkq332K8dB/phcDvIgVXb4=
 
 eventemitter3@^4.0.0:
   version "4.0.0"
@@ -14,5 +14,5 @@ eventemitter3@^4.0.0:
 
 typescript@^3.6.2:
   version "3.6.2"
-  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.6.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.6.2.tgz#105b0f1934119dde543ac8eb71af3a91009efe54"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.6.2.tgz#105b0f1934119dde543ac8eb71af3a91009efe54"
   integrity sha1-EFsPGTQRnd5UOsjrca86kQCe/lQ=

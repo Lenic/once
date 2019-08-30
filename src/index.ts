@@ -1,12 +1,12 @@
-import Deferred from "@lenic/deferred";
+import Deferred, { DeferredResult } from "@lenic/deferred";
 import EventEmitter from "eventemitter3";
 
 interface OnceCallBack<T> {
-  (...args: any[]): PromiseLike<T> | T;
+  (...args: any[]): Promise<T> | T;
 }
 
 interface OnceResult<T> {
-  (arg?: any): PromiseLike<T>;
+  (arg?: any): Promise<T>;
 }
 
 export const bus = new EventEmitter();
@@ -15,8 +15,8 @@ export default function once<T>(
   resetKey: string,
   callback: OnceCallBack<T>
 ): OnceResult<T> {
-  let defer = null,
-    result = null;
+  let defer: DeferredResult<T> = null,
+    result: Promise<T> = null;
 
   const doAction = () => {
     defer = Deferred<T>();
