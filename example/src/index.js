@@ -1,4 +1,4 @@
-import once, { bus } from '@lenic/once';
+import once, { bus } from '../../';
 
 const usersFn = once('clear.users', () => {
   console.warn('使用 fetch 获取数据', new Date());

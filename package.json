@@ -1,15 +1,15 @@
 {
   "name": "@lenic/once",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Merge multiple operations to one operation, and store the result.",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "directories": {
     "example": "example",
     "lib": "lib"
   },
   "scripts": {
-    "build": "rollup -c",
-    "start": "webpack-dev-server --config example/config/webpack.config.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -32,21 +32,11 @@
     "url": "https://github.com/Lenic/once/issues"
   },
   "homepage": "https://github.com/Lenic/once#readme",
-  "dependencies": {
-    "@lenic/deferred": "^1.0.1",
-    "eventemitter3": "^4.0.0"
-  },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
-    "@babel/preset-env": "^7.5.2",
-    "babel-loader": "^8.0.6",
-    "html-webpack-plugin": "^3.2.0",
-    "rollup": "^1.16.7",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.0.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "@lenic/deferred": "^1.0.3",
+    "eventemitter3": "^4.0.0"
   }
 }

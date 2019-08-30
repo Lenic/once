@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 function getPath(dir) {
   return path.join(process.cwd(), dir);
@@ -9,11 +9,11 @@ function getPath(dir) {
 module.exports = {
   mode: 'development',
   devtool: false,
-  entry: getPath('example/src/index.js'),
+  entry: getPath('src/index.js'),
   output: {
     publicPath: '/',
     filename: 'js/[name].js',
-    path: getPath('example/dist'),
+    path: getPath('dist'),
     chunkFilename: 'js/chunks/[id].js',
   },
   module: {
@@ -25,16 +25,11 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    alias: {
-      '@lenic/once': getPath('lib'),
-    },
-  },
   plugins: [
     new webpack.NamedChunksPlugin(),
     new HtmlWebpackPlugin({
       title: 'Once Demo',
-      template: getPath('example/config/index.html'),
+      template: getPath('config/index.html'),
     }),
   ],
   devServer: {
